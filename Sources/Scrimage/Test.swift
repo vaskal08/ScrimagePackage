@@ -1,6 +1,4 @@
-import Scrimage
-
-public struct Scrimage {
+public struct Test {
     public private(set) var text = "Hello, World!"
 
     public init() {
