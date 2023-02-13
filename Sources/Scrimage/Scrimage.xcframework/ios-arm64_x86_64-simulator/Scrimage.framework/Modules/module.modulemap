@@ -1,0 +1,11 @@
+framework module Scrimage {
+  umbrella header "Scrimage.h"
+
+  export *
+  module * { export * }
+}
+
+module Scrimage.Swift {
+  header "Scrimage-Swift.h"
+  requires objc
+}
