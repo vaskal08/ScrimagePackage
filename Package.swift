@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "Scrimage",
+    name: "ScrimagePackage",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Scrimage",
-            targets: ["Scrimage"]),
+            name: "ScrimagePackage",
+            targets: ["ScrimagePackage"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,10 +20,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(name: "ScrimageFramework", path: "ScrimageFramework.xcframework"),
         .target(
-            name: "Scrimage",
+            name: "ScrimagePackage",
             dependencies: []),
         .testTarget(
             name: "ScrimageTests",
-            dependencies: ["Scrimage"]),
+            dependencies: ["ScrimagePackage"]),
     ]
 )
