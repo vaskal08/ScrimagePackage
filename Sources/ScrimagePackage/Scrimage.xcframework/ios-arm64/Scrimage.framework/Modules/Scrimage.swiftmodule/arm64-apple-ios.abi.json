@@ -30,6 +30,55 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "ScrimageContent",
+        "printedName": "ScrimageContent",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ScrimageContent",
+                "printedName": "Scrimage.ScrimageContent",
+                "usr": "s:8Scrimage0A7ContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8Scrimage0A7ContentV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s8Scrimage0A7ContentV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Scrimage",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8Scrimage0A7ContentV",
+        "mangledName": "$s8Scrimage0A7ContentV",
+        "moduleName": "Scrimage",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "ScrimageContainer",
         "printedName": "ScrimageContainer",
         "children": [
@@ -40,16 +89,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8Scrimage0A9ContainerV2idSSvp",
-            "mangledName": "$s8Scrimage0A9ContainerV2idSSvp",
+            "usr": "s:8Scrimage0A9ContainerV2idSSSgvp",
+            "mangledName": "$s8Scrimage0A9ContainerV2idSSSgvp",
             "moduleName": "Scrimage",
             "declAttributes": [
+              "HasInitialValue",
               "HasStorage",
               "AccessControl"
             ],
@@ -62,14 +120,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A9ContainerV2idSSvg",
-                "mangledName": "$s8Scrimage0A9ContainerV2idSSvg",
+                "usr": "s:8Scrimage0A9ContainerV2idSSSgvg",
+                "mangledName": "$s8Scrimage0A9ContainerV2idSSSgvg",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "accessorKind": "get"
@@ -86,14 +152,22 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A9ContainerV2idSSvs",
-                "mangledName": "$s8Scrimage0A9ContainerV2idSSvs",
+                "usr": "s:8Scrimage0A9ContainerV2idSSSgvs",
+                "mangledName": "$s8Scrimage0A9ContainerV2idSSSgvs",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "accessorKind": "set"
@@ -110,8 +184,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A9ContainerV2idSSvM",
-                "mangledName": "$s8Scrimage0A9ContainerV2idSSvM",
+                "usr": "s:8Scrimage0A9ContainerV2idSSSgvM",
+                "mangledName": "$s8Scrimage0A9ContainerV2idSSSgvM",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -121,7 +195,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:content:)",
+            "printedName": "init(content:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -131,29 +205,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.Data?",
+                "printedName": "Scrimage.ScrimageContent?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
+                    "name": "ScrimageContent",
+                    "printedName": "Scrimage.ScrimageContent",
+                    "usr": "s:8Scrimage0A7ContentV"
                   }
                 ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8Scrimage0A9ContainerV2id7contentACSS_10Foundation4DataVSgtcfc",
-            "mangledName": "$s8Scrimage0A9ContainerV2id7contentACSS_10Foundation4DataVSgtcfc",
+            "usr": "s:8Scrimage0A9ContainerV7contentAcA0A7ContentVSg_tcfc",
+            "mangledName": "$s8Scrimage0A9ContainerV7contentAcA0A7ContentVSg_tcfc",
             "moduleName": "Scrimage",
             "declAttributes": [
               "AccessControl"
@@ -228,9 +295,17 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ]
               }
@@ -254,112 +329,27 @@
         "children": [
           {
             "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8Scrimage0A8ListenerC2idSSvp",
-            "mangledName": "$s8Scrimage0A8ListenerC2idSSvp",
-            "moduleName": "Scrimage",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC2idSSvg",
-                "mangledName": "$s8Scrimage0A8ListenerC2idSSvg",
-                "moduleName": "Scrimage",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC2idSSvs",
-                "mangledName": "$s8Scrimage0A8ListenerC2idSSvs",
-                "moduleName": "Scrimage",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC2idSSvM",
-                "mangledName": "$s8Scrimage0A8ListenerC2idSSvM",
-                "moduleName": "Scrimage",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "content",
             "printedName": "content",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Foundation.Data?",
+                "printedName": "Scrimage.ScrimageContent?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
+                    "name": "ScrimageContent",
+                    "printedName": "Scrimage.ScrimageContent",
+                    "usr": "s:8Scrimage0A7ContentV"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8Scrimage0A8ListenerC7content10Foundation4DataVSgvp",
-            "mangledName": "$s8Scrimage0A8ListenerC7content10Foundation4DataVSgvp",
+            "usr": "s:8Scrimage0A8ListenerC7contentAA0A7ContentVSgvp",
+            "mangledName": "$s8Scrimage0A8ListenerC7contentAA0A7ContentVSgvp",
             "moduleName": "Scrimage",
             "declAttributes": [
               "ProjectedValueProperty",
@@ -375,21 +365,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Data?",
+                    "printedName": "Scrimage.ScrimageContent?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
+                        "name": "ScrimageContent",
+                        "printedName": "Scrimage.ScrimageContent",
+                        "usr": "s:8Scrimage0A7ContentV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC7content10Foundation4DataVSgvg",
-                "mangledName": "$s8Scrimage0A8ListenerC7content10Foundation4DataVSgvg",
+                "usr": "s:8Scrimage0A8ListenerC7contentAA0A7ContentVSgvg",
+                "mangledName": "$s8Scrimage0A8ListenerC7contentAA0A7ContentVSgvg",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "accessorKind": "get"
@@ -407,21 +397,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Foundation.Data?",
+                    "printedName": "Scrimage.ScrimageContent?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
+                        "name": "ScrimageContent",
+                        "printedName": "Scrimage.ScrimageContent",
+                        "usr": "s:8Scrimage0A7ContentV"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC7content10Foundation4DataVSgvs",
-                "mangledName": "$s8Scrimage0A8ListenerC7content10Foundation4DataVSgvs",
+                "usr": "s:8Scrimage0A8ListenerC7contentAA0A7ContentVSgvs",
+                "mangledName": "$s8Scrimage0A8ListenerC7contentAA0A7ContentVSgvs",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "accessorKind": "set"
@@ -438,8 +428,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC7content10Foundation4DataVSgvM",
-                "mangledName": "$s8Scrimage0A8ListenerC7content10Foundation4DataVSgvM",
+                "usr": "s:8Scrimage0A8ListenerC7contentAA0A7ContentVSgvM",
+                "mangledName": "$s8Scrimage0A8ListenerC7contentAA0A7ContentVSgvM",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -454,13 +444,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Publisher",
-                "printedName": "Combine.Published<Swift.Optional<Foundation.Data>>.Publisher",
+                "printedName": "Combine.Published<Swift.Optional<Scrimage.ScrimageContent>>.Publisher",
                 "usr": "s:7Combine9PublishedV9PublisherV"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_Gvp",
-            "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_Gvp",
+            "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_Gvp",
+            "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_Gvp",
             "moduleName": "Scrimage",
             "implicit": true,
             "accessors": [
@@ -472,13 +462,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Publisher",
-                    "printedName": "Combine.Published<Swift.Optional<Foundation.Data>>.Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Scrimage.ScrimageContent>>.Publisher",
                     "usr": "s:7Combine9PublishedV9PublisherV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_Gvg",
-                "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_Gvg",
+                "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_Gvg",
+                "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_Gvg",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "accessorKind": "get"
@@ -496,13 +486,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Publisher",
-                    "printedName": "Combine.Published<Swift.Optional<Foundation.Data>>.Publisher",
+                    "printedName": "Combine.Published<Swift.Optional<Scrimage.ScrimageContent>>.Publisher",
                     "usr": "s:7Combine9PublishedV9PublisherV"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_Gvs",
-                "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_Gvs",
+                "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_Gvs",
+                "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_Gvs",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "intro_Macosx": "11.0",
@@ -529,8 +519,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_GvM",
-                "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVy10Foundation4DataVSg_GvM",
+                "usr": "s:8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_GvM",
+                "mangledName": "$s8Scrimage0A8ListenerC8$content7Combine9PublishedV9PublisherVyAA0A7ContentVSg_GvM",
                 "moduleName": "Scrimage",
                 "implicit": true,
                 "intro_Macosx": "11.0",
@@ -550,7 +540,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:)",
+            "printedName": "init(id:liveReload:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -563,11 +553,18 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8Scrimage0A8ListenerC2idACSS_tcfc",
-            "mangledName": "$s8Scrimage0A8ListenerC2idACSS_tcfc",
+            "usr": "s:8Scrimage0A8ListenerC2id10liveReloadACSS_Sbtcfc",
+            "mangledName": "$s8Scrimage0A8ListenerC2id10liveReloadACSS_Sbtcfc",
             "moduleName": "Scrimage",
             "declAttributes": [
               "AccessControl"
@@ -610,5 +607,13 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vasishta\/Scrimage 2.0\/Scrimage\/Scrimage\/Source\/ScrimageContainer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2871,
+      "length": 5,
+      "value": "false"
+    }
+  ]
 }

@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		9NacXVI+DyDJS9xLwZ8TW5rxdaE=
+		j/Yjo98rlFXr5007yAc2mlY+zuo=
 		</data>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		kpYatuqNLKAgytVyb0zyzd0vgU0=
+		aNxlvKNp7RMgSzhe06eNVAnoVQg=
 		</data>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		kpYatuqNLKAgytVyb0zyzd0vgU0=
+		aNxlvKNp7RMgSzhe06eNVAnoVQg=
 		</data>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		d3cHLoI3hOMLgsGnD9B5B9kKRsE=
+		zvaaL64x+uBoWi3jRGaVsa6iBTE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,14 +61,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OhgOM4JPhlQXuLgHQSeUTJp77uWaqq9mlBOHjMCxoNw=
+			v0wi0vb5s4tIdVs/c6v2sxSjIh9i3fpvimGbaK8LNS0=
 			</data>
 		</dict>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rc0gMuUu9NMX9NdPzYy38Rx0PCyoeYbN6YPMmzPNzA4=
+			7D2DWLi4mhaz+SDCXpAaMpCLzepe6U91UHVlx9Cblts=
 			</data>
 		</dict>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -82,14 +82,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rc0gMuUu9NMX9NdPzYy38Rx0PCyoeYbN6YPMmzPNzA4=
+			7D2DWLi4mhaz+SDCXpAaMpCLzepe6U91UHVlx9Cblts=
 			</data>
 		</dict>
 		<key>Modules/Scrimage.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tsHyiacFbdTZfglhCtyT5x5/NaWPHFZVZWw4y5I7bHk=
+			rfd+VOkD6bxgnzlDJdjtl5IPKA9T/+kSgZlecRpdboA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -9,26 +9,28 @@ import Swift
 import SwiftUI
 import _Concurrency
 import _StringProcessing
+public struct ScrimageContent : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
 public struct ScrimageContainer {
-  public var id: Swift.String
-  public init(id: Swift.String, content: Foundation.Data? = nil)
+  public var id: Swift.String?
+  public init(content: Scrimage.ScrimageContent?)
   public func render() -> SwiftUI.AnyView
-  public typealias ID = Swift.String
+  public typealias ID = Swift.String?
   public init(from decoder: Swift.Decoder) throws
 }
 public class ScrimageListener : Foundation.ObservableObject {
-  public var id: Swift.String
-  @Combine.Published @_projectedValueProperty($content) public var content: Foundation.Data? {
+  @Combine.Published @_projectedValueProperty($content) public var content: Scrimage.ScrimageContent? {
     get
     set
     _modify
   }
-  public var $content: Combine.Published<Foundation.Data?>.Publisher {
+  public var $content: Combine.Published<Scrimage.ScrimageContent?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  public init(id: Swift.String)
+  public init(id: Swift.String, liveReload: Swift.Bool = false)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
