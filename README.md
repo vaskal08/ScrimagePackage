@@ -4,6 +4,8 @@ Scrimage is a server-driven interface for generating mobile UI using JSON docume
 
 This product is in prototype phase, with limited functionality. Feedback is appreciated, email feedback to [vk@scrimage.app](mailto:vk@scrimage.app).
 
+Demo video can be found [here](https://www.youtube.com/watch?v=1S5qqhCO2yA).
+
 ## 1  Console
 
 Visit the [console](https://agreeable-pebble-02d8e650f.2.azurestaticapps.net/), which will give you access to create and edit UI documents. A how-to video can be found below which will give an overview on how to use this web console.
