@@ -86,7 +86,7 @@ Here is a list of the available components that can be used, along with a descri
     }
     ```
     
-- **hstack**: a horizontal stack that can contain other components in the \"subviews\" field:
+- **hstack**: a horizontal stack that can contain other components in the "subviews" field:
     
     ```json
     {
@@ -96,7 +96,7 @@ Here is a list of the available components that can be used, along with a descri
     }
     ```
     
-- **button**: a button with label "title": {\"id\": \"button-like\", \"type\": \"button\",\"title\": \"Like\"}
+- **button**: a button with label "title":
     
     ```json
     {
@@ -106,7 +106,7 @@ Here is a list of the available components that can be used, along with a descri
     }
     ```
     
-- text: a text label: {\"id\": \"label-actions\", \"type\": \"text\", \"title\": \"Actions\"}
+- text: a text label:
     
     ```json
     {
